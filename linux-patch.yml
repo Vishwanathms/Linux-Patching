@@ -1,0 +1,10 @@
+---
+- name: patch all the packages in the OS
+  hosts: appserver
+  become: true
+  
+  tasks:
+  - name: patch the complete OS
+    yum:
+      name: "httpd"
+      state: latest
