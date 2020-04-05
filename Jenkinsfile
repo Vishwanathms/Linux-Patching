@@ -6,4 +6,5 @@ pipeline {
                 sh "ansible-playbook linux-patch.yml"
             }
         }   
+    }
 }
